@@ -166,16 +166,16 @@
 		};
 	};
 	bcm2079x@77 {
-		compatible = "bcm,bcm2079x";
+		compatible = "brcm,bcm2079x";
 		status = "okay";
 		reg = <0x77>;
-		bcm,i2c-pull-up = <1>;
+		brcm,i2c-pull-up = <1>;
 		interrupts-extended = <&tlmm 59 IRQ_TYPE_EDGE_FALLING>;
-		bcm,gpio_sda = <&msmgpio 83 0x00>;
-		bcm,gpio_scl = <&msmgpio 84 0x00>;
-		bcm,gpio_ven = <&msmgpio 94 0x00>;
-		bcm,gpio_wake = <&msmgpio 92 0x00>;
-		bcm,gpio_irq = <&msmgpio 59 0x00>;
+		brcm,gpio_sda = <&tlmm 83 GPIO_ACTIVE_HIGH>;
+		brcm,gpio_scl = <&tlmm 84 GPIO_ACTIVE_HIGH>;
+		brcm,gpio_ven = <&tlmm 94 GPIO_ACTIVE_HIGH>;
+		brcm,gpio_wake = <&tlmm 92 GPIO_ACTIVE_HIGH>;
+		brcm,gpio_irq = <&tlmm 59 GPIO_ACTIVE_HIGH>;
 	};
 };
 

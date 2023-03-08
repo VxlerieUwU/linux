@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config NFC_BCM2079X
+	tristate "Broadcom 2079X NFC Controller Driver"
+	depends on I2C
+	select CRC_CCITT
+	help
+	  Broadcom 2079X Near Field Communication controller support. 
+	  Driver imported from Nexus 5 downstream kernel source.
